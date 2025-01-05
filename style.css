@@ -46,7 +46,7 @@ body {
 
 .foot {
     border-style: double;
-    border-color: #121212;
+    border-color: #FF6A00;
     border-width: 3px;
     position: fixed;
     height: 50px;
@@ -54,11 +54,12 @@ body {
     float: right;
     left: 0;
     bottom: 0;
-    background-color:#FF6A00;
-    color: #0A0A0A;
+    background-color: #121212; /* Noir plus clair */
+    color: #FF6A00;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10; /* Assure que la navbar reste au-dessus */
 
 }
 
