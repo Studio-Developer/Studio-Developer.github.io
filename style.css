@@ -1,11 +1,67 @@
 /* Global Styles */
+
+html {
+    height: 100%
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FF6A00;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FF6A00;
+}
+
 body {
+  height: 100%
   margin: 0;
   font-family: 'Sixtyfour', Courier, monospace; /* Police personnalisée */
   background-color: #0A0A0A; /* Noir profond */
   color: #FF6A00; /* Orange du logo */
   overflow-x: hidden; /* Empêche le défilement horizontal */
 }
+
+#page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+    justify-content: space-between;
+}
+#bloc-principal {
+    padding-bottom: 100px;
+}
+
+.foot {
+    border-style: double;
+    border-color: #121212;
+    border-width: 3px;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    float: right;
+    left: 0;
+    bottom: 0;
+    background-color:#FF6A00;
+    color: #0A0A0A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 
 a:link, a:visited, a:hover, a:active {
   text-decoration: none; /* Supprime les soulignements des liens */
@@ -79,6 +135,8 @@ a:link, a:visited, a:hover, a:active {
   background: linear-gradient(90deg, transparent, #FF6A00, transparent);
   animation: scan 2s infinite linear;
 }
+
+
 
 @keyframes scan {
   0% {
