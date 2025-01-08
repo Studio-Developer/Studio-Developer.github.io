@@ -136,7 +136,46 @@ a:link, a:visited, a:hover, a:active {
   background: linear-gradient(90deg, transparent, #FF6A00, transparent);
   animation: scan 2s infinite linear;
 }
+.side-logo {
+  position: fixed;
+  top: 12%;
+  left: 26%;
+  display: flex;
+  height: 200px;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  border-style: double;
+  border-color: #B8D1B9;
+  border-width: 3px;
+  border-radius: 10%;
+}
 
+.aboutdesc {
+    font-size: 1.2rem;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: 17.5%;
+    float: right;
+    color: #FF6A00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Effet de curseur clignotant */
+#typewriter::after {
+  content: "▮";
+  display: inline-block;
+  animation: blink 0.5s steps(1, start) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 
 
 @keyframes scan {
