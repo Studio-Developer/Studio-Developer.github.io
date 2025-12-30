@@ -166,6 +166,8 @@ a:link, a:visited, a:hover, a:active {
   max-width: 800px;
   margin: auto;
   line-height: 1.6;
+
+  transform: translateY(40px); /* ajuste ici */
 }
 
 /* Effet de curseur clignotant */
