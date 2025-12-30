@@ -84,7 +84,13 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .logo {
+  margin-left: 0;
+}
+
+.logo a {
   display: flex;
+  align-items: center;
+  padding-left: 10px; /* optionnel, léger espace */
 }
 
 .logo img {
